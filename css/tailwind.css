@@ -1,3 +1,42 @@
+/* La base capa es para cosas como reglas 
+de reinicio o estilos predeterminados 
+aplicados a elementos HTML sin formato. */
 @tailwind base;
+
+/* La componentscapa es para estilos basados 
+​​en clases que desea poder anular con utilidades. */
 @tailwind components;
+
+
+
+/* La utilities capa es para clases pequeñas
+ de un solo propósito que siempre deben tener 
+ prioridad sobre cualquier otro estilo. */
 @tailwind utilities;
+
+
+@layer utilities {
+/* @responsive {  @resposibe => se usa para las versiones 2.2.16*/
+    .rotate-45 {
+        transform: rotate(45deg);
+    }
+}
+
+/* @variants => se usa para las versiones 2.2.16
+    docs: https://tailwindcss.com/docs/upgrade-guide#replace-variants-with-layer
+@variants hover {
+    .zoom {
+        transform: scale(2);
+    }
+} */
+
+/* @layer => se usa para las versiones 3.1.8 
+    porque: docs: https://tailwindcss.com/docs/upgrade-guide#replace-variants-with-layer
+
+    docs: https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
+*/
+@layer utilities {
+    .zoom {
+        transform: scale(2);
+    }
+}
