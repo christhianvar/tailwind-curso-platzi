@@ -13,22 +13,69 @@
             <h1 class="mb-1 text-3xl font-bold">Reto - Tailwind v2.2.16</h1>
             <p class="text-gray-600 text-xs">Creado por: Christian Vargas</p>
         </div>
+        
+        <div class="mt-8 px-5 py-5 m-auto text-center bg-blue-300">
+            <h2 class="mb-8 text-center text-xl font-semibold">Colores y dimensiones</h2>
+            <button class="rounded-xl w-full sm:max-w-sm p-2 text-sm text-[#8B91B3] bg-[#202D4C]">Button</button>
+        </div>
 
         <div class="mt-8 px-5 py-5 m-auto text-center bg-blue-300">
             <h2 class="mb-8 text-center text-xl font-semibold">Display y Flexbox</h2>
-            <button class="rounded-xl w-full sm:max-w-sm p-2 text-sm text-[#8B91B3] bg-[#202D4C]">Button</button>
+
+            <div class="flex flex-col sm:flex-row sm:justify-center">
+                <button class="rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-green-800">Button 1</button>
+
+                <button class="rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-amber-600">
+                    Button 2
+                </button>
+
+                <button class="rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-red-600">
+                    Button 3
+                </button>
+
+            </div>
         </div>
+
 
         <div class="mt-8 px-5 py-5 m-auto text-center bg-blue-300">
-            <h2 class="mb-8 text-center text-xl font-semibold">Colores y dimensiones</h2>
-            <button class="rounded-xl w-full sm:max-w-sm p-2 text-sm text-[#8B91B3] bg-[#202D4C]">Button</button>
-        </div>
+            <h2 class="mb-8 text-center text-xl font-semibold">Pseudo-Class Variant</h2>
+            <div class="flex flex-col sm:flex-row sm:justify-center">
+                
 
+                <button class="hover:bg-green-900 rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-green-700">Button 1</button>
+
+                <button class="hover:bg-amber-700 rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-amber-600">
+                    Button 2
+                </button>
+
+                <button class="hover:bg-red-800 active:bg-sky-800 rounded-xl w-full mb-6 sm:m-0 sm:mr-4 sm:w-40 p-2 text-sm text-white font-medium bg-red-600">
+                    Button 3
+                </button>
+
+            </div>
+        </div>
         <div class="mt-8 px-5 py-5 m-auto text-center bg-blue-300">
-            <h2 class="mb-8 text-center text-xl font-semibold">Colores y dimensiones</h2>
-            <button class="rounded-xl w-full sm:max-w-sm p-2 text-sm text-[#8B91B3] bg-[#202D4C]">Button</button>
+            <h2 class="mb-8 text-center text-xl font-semibold">Componentes usando @apply</h2>
+            
+            <div class="w-full sm:flex sm:justify-center">
+                
+                <div class="alert">
+                    Este mensaje es una alerta default
+                </div>
+                
+                <div class="alert alert-danger">
+                    Este mensaje es una alerta danger
+                </div>
+                
+                <div class="alert alert-warning">
+                    Este mensaje es una alerta warning
+                </div>
+                
+                <div class="alert alert-info">
+                    Este mensaje es una alerta  info
+                </div>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
