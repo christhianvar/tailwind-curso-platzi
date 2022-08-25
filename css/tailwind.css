@@ -7,12 +7,30 @@ aplicados a elementos HTML sin formato. */
 ​​en clases que desea poder anular con utilidades. */
 @tailwind components;
 
+.alert {
+    @apply w-1/5 p-4 m-5 border-solid border-2 border-gray-700 bg-gray-300 text-gray-800
+            font-semibold
+}
 
+.alert-danger {
+    @apply border-red-700 bg-red-300 text-red-800
+}
+
+.alert-warning {
+    @apply border-yellow-500 bg-yellow-200 text-yellow-800
+}
+
+.alert-info {
+    @apply border-indigo-700 bg-indigo-300 text-indigo-800
+}
 
 /* La utilities capa es para clases pequeñas
  de un solo propósito que siempre deben tener 
  prioridad sobre cualquier otro estilo. */
 @tailwind utilities;
+
+
+/* reto 2.2.16 */
 
 
 @layer utilities {
