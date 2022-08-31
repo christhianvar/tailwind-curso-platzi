@@ -6,7 +6,11 @@ module.exports = {
   ],
   theme: {
     
-    extend: {},
+    extend: {
+      fontFamily: {
+        'itau' : '"itau display xbold"',
+      }
+    },
   },
 
   // solo para versiones 2.2.16 => ya estan por defecto en 3.1.8

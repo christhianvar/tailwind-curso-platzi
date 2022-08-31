@@ -1,3 +1,5 @@
+/* docs: https://tailwindcss.com/docs/functions-and-directives#directives */
+
 /* La base capa es para cosas como reglas 
 de reinicio o estilos predeterminados 
 aplicados a elementos HTML sin formato. */
@@ -920,6 +922,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-itau {
+  font-family: "itau display xbold";
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -938,6 +944,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -1012,7 +1023,38 @@ video {
 
 /* @responsive {  @resposibe => se usa para las versiones 2.2.16*/
 
+@font-face {
+  font-family: 'itau display xbold';
+
+  src: url('../fonts/itaudisplay_xbd-webfont.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 /* reto 2.2.16 */
+
+/* @variants hover {
+    .back-h-green {
+        @apply bg-green-900
+    }
+
+    .back-h-amber {
+        @apply bg-amber-800
+    }
+} */
+
+/* @variants active {
+    .back-act-amber {
+        @apply bg-amber-800
+    }
+
+    .back-act-slate {
+        @apply bg-slate-600
+    }
+
+} */
 
 /* @variants => se usa para las versiones 2.2.16
     docs: https://tailwindcss.com/docs/upgrade-guide#replace-variants-with-layer
